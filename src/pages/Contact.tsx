@@ -1,5 +1,7 @@
 import { Layout } from "@/components/Layout";
-import { Mail, Phone, MapPin } from "lucide-react";
+import { Mail, Phone, MapPin, Linkedin } from "lucide-react";
+
+const LINKEDIN_URL = "https://www.linkedin.com/in/naveed-hussain-syed";
 
 const Contact = () => {
   return (
