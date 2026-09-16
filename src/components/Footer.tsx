@@ -4,6 +4,21 @@ interface FooterProps {
   variant?: "default" | "echelon";
 }
 
+const marqueeTopKeywords = [
+  "Technical Project Management",
+  "eCommerce Delivery",
+  "Data Migration",
+];
+
+const marqueeBottomKeywords = [
+  "Agile & Scrum",
+  "Stakeholder Management",
+  "Risk Management",
+  "Delivery Governance",
+  "Magento / Adobe Commerce",
+  "Release & Rollout Planning",
+];
+
 export function Footer({ variant = "default" }: FooterProps) {
   const currentYear = new Date().getFullYear();
 
@@ -58,17 +73,37 @@ export function Footer({ variant = "default" }: FooterProps) {
           </div>
         </div>
 
-        {/* Large Scrolling Text */}
-        <div className="border-t border-separator overflow-hidden py-6 md:py-8">
+        {/* Scrolling Skills Marquee */}
+        <div className="border-t border-separator overflow-hidden py-5 md:py-7">
           <div className="flex whitespace-nowrap animate-marquee">
-            {Array.from({ length: 8 }).map((_, i) => (
-              <span
-                key={i}
-                className="font-display text-6xl md:text-8xl lg:text-[10rem] font-bold text-foreground mx-12"
-              >
-                Syed Naveed Hussain
-              </span>
-            ))}
+            {Array.from({ length: 4 }).map((_, row) =>
+              marqueeTopKeywords.map((keyword, i) => (
+                <span key={`${row}-${i}`} className="flex items-center">
+                  <span className="font-display text-4xl md:text-6xl lg:text-7xl font-bold text-foreground mx-6 md:mx-8">
+                    {keyword}
+                  </span>
+                  <span className="text-accent text-2xl md:text-4xl">/</span>
+                </span>
+              ))
+            )}
+          </div>
+        </div>
+
+        <div className="border-t border-separator overflow-hidden py-4 md:py-5">
+          <div
+            className="flex whitespace-nowrap animate-marquee"
+            style={{ animationDirection: "reverse" }}
+          >
+            {Array.from({ length: 4 }).map((_, row) =>
+              marqueeBottomKeywords.map((keyword, i) => (
+                <span key={`${row}-${i}`} className="flex items-center">
+                  <span className="font-display text-2xl md:text-4xl font-semibold text-muted-foreground mx-5 md:mx-7">
+                    {keyword}
+                  </span>
+                  <span className="text-accent text-lg md:text-2xl">&bull;</span>
+                </span>
+              ))
+            )}
           </div>
         </div>
       </footer>
