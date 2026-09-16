@@ -45,7 +45,8 @@ const Index = () => {
               >
                 <img
                   src={image}
-                  alt=""
+                  alt={`${projects[index]?.title ?? "Project"} - technical project management work by Syed Naveed Hussain`}
+                  loading={index > 1 ? "lazy" : "eager"}
                   className="w-full h-full object-cover opacity-60"
                 />
               </div>
@@ -57,16 +58,23 @@ const Index = () => {
         <div className="absolute inset-0 bg-background/30" />
 
         {/* Centered Title - Overlaid */}
-        <div className="absolute inset-0 flex items-center justify-center z-10 px-4">
-          <h1 className="text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-display font-bold tracking-tight text-foreground text-center">
+        <div className="absolute inset-0 flex flex-col items-center justify-center z-10 px-4 text-center">
+          <h1 className="text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-display font-bold tracking-tight text-foreground">
             Syed Naveed Hussain
           </h1>
+          <p className="mt-4 text-base md:text-xl text-foreground/90 max-w-2xl">
+            Technical Project Manager | eCommerce Project Delivery | Data
+            Migration | Agile Delivery Governance
+          </p>
         </div>
 
         {/* Bio - Bottom Left */}
-        <div className="absolute bottom-8 md:bottom-12 left-6 md:left-12 z-10 max-w-xs md:max-w-sm">
+        <div className="absolute bottom-8 md:bottom-12 left-6 md:left-12 z-10 max-w-xs md:max-w-md">
           <p className="text-sm md:text-base font-sans text-foreground/80 leading-relaxed">
-            Technical Project Manager at Codilar Technologies — leading eCommerce delivery, data migration, and global stakeholder management across the US, UK, and Gulf regions.
+            Technical Project Manager at Codilar Technologies, leading multiple
+            concurrent eCommerce projects, data migration workstreams, risk
+            tracking and stakeholder management for clients across the United
+            States, United Kingdom and Gulf regions.
           </p>
         </div>
       </section>
