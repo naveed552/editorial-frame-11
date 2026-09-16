@@ -46,14 +46,14 @@ const About = () => {
         <div className="max-w-3xl space-y-14">
           {/* Professional Summary */}
           <div>
-            <h1 className="text-display mb-4 animate-fade-in-up">
+            <h1 className="text-display mb-4 animate-fade-in-up whitespace-nowrap">
               Syed Naveed Hussain
             </h1>
             <p
               className="text-lg md:text-xl text-foreground mb-8 animate-fade-in-up"
               style={{ animationDelay: "0.05s" }}
             >
-              Technical Project Manager, Codilar Technologies &mdash; eCommerce
+              Technical Project Manager, Codilar Technologies - eCommerce
               Delivery, Data Migration and Global Stakeholder Management
             </p>
 
@@ -144,41 +144,6 @@ const About = () => {
               {engagementRegions.map((region) => (
                 <li key={region}>{region}</li>
               ))}
-            </ul>
-          </div>
-
-          {/* Contact */}
-          <div
-            className="animate-fade-in-up"
-            style={{ animationDelay: "0.35s" }}
-          >
-            <h2 className="text-label mb-6">Contact</h2>
-            <ul className="space-y-2 text-base">
-              <li>
-                Email:{" "}
-                <a
-                  href="mailto:sd.naveedhussain@gmail.com"
-                  className="hover-highlight"
-                >
-                  sd.naveedhussain@gmail.com
-                </a>
-              </li>
-              <li>
-                Alternate email:{" "}
-                <a
-                  href="mailto:naveed.domain@yahoo.in"
-                  className="hover-highlight"
-                >
-                  naveed.domain@yahoo.in
-                </a>
-              </li>
-              <li>
-                Phone:{" "}
-                <a href="tel:+919502686709" className="hover-highlight">
-                  +91 95026 86709
-                </a>
-              </li>
-              <li>Location: India</li>
             </ul>
           </div>
         </div>
