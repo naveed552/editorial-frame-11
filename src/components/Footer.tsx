@@ -27,7 +27,7 @@ export function Footer({ variant = "default" }: FooterProps) {
       <footer className="border-t border-separator mt-auto">
         {/* Main Footer Content */}
         <div className="container-wide py-12 md:py-16">
-          <div className="grid grid-cols-2 md:grid-cols-3 gap-8 md:gap-12">
+          <div className="grid grid-cols-2 md:grid-cols-2 gap-8 md:gap-12">
             {/* Site */}
             <div className="space-y-3">
               <p className="text-label">Site</p>
@@ -52,15 +52,6 @@ export function Footer({ variant = "default" }: FooterProps) {
                   +91 95026 86709
                 </a>
               </div>
-            </div>
-
-            {/* Copyright */}
-            <div className="space-y-3">
-              <p className="text-sm text-muted-foreground whitespace-nowrap">
-                <span className="text-label">Legal</span>
-                <span className="mx-2">&middot;</span>
-                &copy; {currentYear} All Rights Reserved
-              </p>
             </div>
           </div>
         </div>
@@ -96,6 +87,14 @@ export function Footer({ variant = "default" }: FooterProps) {
                 </span>
               ))
             )}
+          </div>
+        </div>
+        {/* Static legal line at the very end of the footer */}
+        <div className="border-t border-separator">
+          <div className="container-wide py-5">
+            <p className="text-sm text-muted-foreground">
+              Legal<span className="mx-2">&middot;</span>&copy; {currentYear} All Rights Reserved
+            </p>
           </div>
         </div>
       </footer>
