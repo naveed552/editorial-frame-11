@@ -45,7 +45,8 @@ const Index = () => {
               >
                 <img
                   src={image}
-                  alt=""
+                  alt={`${projects[index]?.title ?? "Project"} - technical project management work by Syed Naveed Hussain`}
+                  loading={index > 1 ? "lazy" : "eager"}
                   className="w-full h-full object-cover opacity-60"
                 />
               </div>
