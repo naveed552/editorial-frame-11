@@ -55,9 +55,9 @@ export function Header({ revealMode = false }: HeaderProps) {
           {/* Logo */}
           <Link
             to="/"
-            className="font-display text-lg font-semibold tracking-tight text-foreground hover:opacity-70 transition-opacity"
+            className="font-display text-lg font-semibold tracking-tight uppercase text-foreground hover:opacity-70 transition-opacity"
           >
-            Syed Naveed Hussain
+            Home
           </Link>
 
           {/* Desktop Navigation - Centered */}
