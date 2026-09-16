@@ -1,5 +1,5 @@
 import { Layout } from "@/components/Layout";
-import { Mail, Phone, Instagram } from "lucide-react";
+import { Mail, Phone, MapPin } from "lucide-react";
 
 const Contact = () => {
   return (
@@ -20,33 +20,36 @@ const Contact = () => {
             {/* Contact Info */}
             <div className="space-y-6 animate-fade-in-up" style={{ animationDelay: "0.2s" }}>
               <a
-                href="mailto:hello@jordanstudio.com"
+                href="mailto:sd.naveedhussain@gmail.com"
                 className="flex items-center gap-4 text-lg hover-highlight group"
               >
                 <Mail size={20} className="text-muted-foreground group-hover:text-accent transition-colors" />
-                <span>hello@jordanstudio.com</span>
+                <span>sd.naveedhussain@gmail.com</span>
               </a>
 
               <a
-                href="https://instagram.com/jordanstudio"
-                target="_blank"
-                rel="noopener noreferrer"
+                href="mailto:naveed.domain@yahoo.in"
                 className="flex items-center gap-4 text-lg hover-highlight group"
               >
-                <Instagram size={20} className="text-muted-foreground group-hover:text-accent transition-colors" />
-                <span>@jordanstudio</span>
+                <Mail size={20} className="text-muted-foreground group-hover:text-accent transition-colors" />
+                <span>naveed.domain@yahoo.in</span>
               </a>
 
-              <div className="flex items-center gap-4 text-lg text-muted-foreground">
-                <Phone size={20} />
-                <span>+55 11 9999-9999</span>
-              </div>
+              <a
+                href="tel:+919502686709"
+                className="flex items-center gap-4 text-lg hover-highlight group"
+              >
+                <Phone size={20} className="text-muted-foreground group-hover:text-accent transition-colors" />
+                <span>+91 95026 86709</span>
+              </a>
             </div>
 
             {/* Location */}
             <div className="animate-fade-in-up" style={{ animationDelay: "0.3s" }}>
-              <p className="text-label mb-2">Based in</p>
-              <p className="text-lg">São Paulo, Brazil</p>
+              <p className="text-label mb-2 flex items-center gap-2">
+                <MapPin size={14} /> Based in
+              </p>
+              <p className="text-lg">India</p>
             </div>
           </div>
 
@@ -54,8 +57,9 @@ const Contact = () => {
           <div className="hidden lg:block">
             <div className="aspect-[4/5] bg-secondary overflow-hidden">
               <img
-                src="https://images.unsplash.com/photo-1452587925148-ce544e77e70d?w=800&h=1000&fit=crop"
-                alt="Contact"
+                src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&h=1000&fit=crop"
+                alt="Workspace"
+                loading="lazy"
                 className="w-full h-full object-cover"
               />
             </div>

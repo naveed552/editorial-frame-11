@@ -53,11 +53,11 @@ export function Header({ revealMode = false }: HeaderProps) {
       <div className="container-wide relative">
         <div className="flex items-center justify-between h-20 md:h-24">
           {/* Logo */}
-          <Link 
-            to="/" 
+          <Link
+            to="/"
             className="font-display text-lg font-semibold tracking-tight text-foreground hover:opacity-70 transition-opacity"
           >
-            Jordan Studio
+            Syed Naveed Hussain
           </Link>
 
           {/* Desktop Navigation - Centered */}
