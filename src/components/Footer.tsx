@@ -17,14 +17,14 @@ export function Footer({ variant = "default" }: FooterProps) {
             <div className="space-y-3">
               <p className="text-label">Location</p>
               <div className="text-sm text-foreground space-y-1">
-                <p>São Paulo, SP</p>
-                <p>Brazil</p>
+                <p>India</p>
+                <p>Serving US, UK & Gulf clients</p>
               </div>
             </div>
 
-            {/* Gallery */}
+            {/* Site */}
             <div className="space-y-3">
-              <p className="text-label">Gallery</p>
+              <p className="text-label">Site</p>
               <div className="text-sm space-y-1">
                 <Link to="/work" className="block text-foreground hover:text-accent transition-colors">Projects</Link>
                 <Link to="/about" className="block text-foreground hover:text-accent transition-colors">About</Link>
@@ -36,10 +36,15 @@ export function Footer({ variant = "default" }: FooterProps) {
             <div className="space-y-3">
               <p className="text-label">Contact</p>
               <div className="text-sm text-foreground space-y-1">
-                <a href="mailto:hello@jordanstudio.com" className="block hover:text-accent transition-colors">
-                  hello@jordanstudio.com
+                <a href="mailto:sd.naveedhussain@gmail.com" className="block hover:text-accent transition-colors">
+                  sd.naveedhussain@gmail.com
                 </a>
-                <p>+55 11 9999-9999</p>
+                <a href="mailto:naveed.domain@yahoo.in" className="block hover:text-accent transition-colors">
+                  naveed.domain@yahoo.in
+                </a>
+                <a href="tel:+919502686709" className="block hover:text-accent transition-colors">
+                  +91 95026 86709
+                </a>
               </div>
             </div>
 
@@ -61,7 +66,7 @@ export function Footer({ variant = "default" }: FooterProps) {
                 key={i}
                 className="font-display text-6xl md:text-8xl lg:text-[10rem] font-bold text-foreground mx-12"
               >
-                @JORDANSTUDIO
+                Syed Naveed Hussain
               </span>
             ))}
           </div>
@@ -77,9 +82,9 @@ export function Footer({ variant = "default" }: FooterProps) {
         <div className="flex flex-col md:flex-row justify-between gap-8">
           {/* Left */}
           <div className="space-y-4">
-            <p className="font-display text-xl font-semibold">Jordan Studio</p>
+            <p className="font-display text-xl font-semibold">Syed Naveed Hussain</p>
             <p className="text-muted-foreground text-sm">
-              Design & Illustration
+              Technical Project Manager
             </p>
           </div>
 
@@ -92,8 +97,8 @@ export function Footer({ variant = "default" }: FooterProps) {
 
           {/* Right */}
           <div className="text-sm text-muted-foreground">
-            <p>© {currentYear} Jordan Studio</p>
-            <p className="mt-1">São Paulo, Brazil</p>
+            <p>© {currentYear} Syed Naveed Hussain</p>
+            <p className="mt-1">India</p>
           </div>
         </div>
       </div>
