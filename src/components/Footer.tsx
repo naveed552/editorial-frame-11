@@ -25,37 +25,6 @@ export function Footer({ variant = "default" }: FooterProps) {
   if (variant === "echelon") {
     return (
       <footer className="border-t border-separator mt-auto">
-        {/* Main Footer Content */}
-        <div className="container-wide py-12 md:py-16">
-          <div className="grid grid-cols-2 md:grid-cols-2 gap-8 md:gap-12">
-            {/* Site */}
-            <div className="space-y-3">
-              <p className="text-label">Site</p>
-              <div className="text-sm space-y-1">
-                <Link to="/work" className="block text-foreground hover:text-accent transition-colors">Projects</Link>
-                <Link to="/about" className="block text-foreground hover:text-accent transition-colors">About</Link>
-                <Link to="/contact" className="block text-foreground hover:text-accent transition-colors">Contact</Link>
-              </div>
-            </div>
-
-            {/* Contact */}
-            <div className="space-y-3">
-              <p className="text-label">Contact</p>
-              <div className="text-sm text-foreground space-y-1">
-                <a href="mailto:sd.naveedhussain@gmail.com" className="block hover:text-accent transition-colors">
-                  sd.naveedhussain@gmail.com
-                </a>
-                <a href="mailto:naveed.domain@yahoo.in" className="block hover:text-accent transition-colors">
-                  naveed.domain@yahoo.in
-                </a>
-                <a href="tel:+919502686709" className="block hover:text-accent transition-colors">
-                  +91 95026 86709
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-
         {/* Scrolling Skills Marquee */}
         <div className="border-t border-separator overflow-hidden py-5 md:py-7">
           <div className="flex whitespace-nowrap animate-marquee">
