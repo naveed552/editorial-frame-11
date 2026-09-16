@@ -10,7 +10,7 @@ const Contact = () => {
           <div className="space-y-12">
             <div>
               <h1 className="text-display mb-6 animate-fade-in-up">
-                Contact Syed Naveed Hussain
+                Syed Naveed Hussain
               </h1>
               <p className="text-xl text-muted-foreground animate-fade-in-up" style={{ animationDelay: "0.1s" }}>
                 Technical Project Manager available for eCommerce delivery, data
