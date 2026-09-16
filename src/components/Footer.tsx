@@ -27,16 +27,7 @@ export function Footer({ variant = "default" }: FooterProps) {
       <footer className="border-t border-separator mt-auto">
         {/* Main Footer Content */}
         <div className="container-wide py-12 md:py-16">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-12">
-            {/* Location */}
-            <div className="space-y-3">
-              <p className="text-label">Location</p>
-              <div className="text-sm text-foreground space-y-1">
-                <p>India</p>
-                <p>Serving US, UK & Gulf clients</p>
-              </div>
-            </div>
-
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-8 md:gap-12">
             {/* Site */}
             <div className="space-y-3">
               <p className="text-label">Site</p>
@@ -65,10 +56,11 @@ export function Footer({ variant = "default" }: FooterProps) {
 
             {/* Copyright */}
             <div className="space-y-3">
-              <p className="text-label">Legal</p>
-              <div className="text-sm text-muted-foreground space-y-1">
-                <p>© {currentYear} All Rights Reserved</p>
-              </div>
+              <p className="text-sm text-muted-foreground whitespace-nowrap">
+                <span className="text-label">Legal</span>
+                <span className="mx-2">&middot;</span>
+                &copy; {currentYear} All Rights Reserved
+              </p>
             </div>
           </div>
         </div>
