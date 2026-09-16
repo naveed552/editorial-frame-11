@@ -89,6 +89,14 @@ export function Footer({ variant = "default" }: FooterProps) {
             )}
           </div>
         </div>
+        {/* Static legal line at the very end of the footer */}
+        <div className="border-t border-separator">
+          <div className="container-wide py-5">
+            <p className="text-sm text-muted-foreground">
+              Legal<span className="mx-2">&middot;</span>&copy; {currentYear} All Rights Reserved
+            </p>
+          </div>
+        </div>
       </footer>
     );
   }
