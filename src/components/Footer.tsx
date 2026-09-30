@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Mail, Linkedin, ArrowUpRight } from "lucide-react";
+import { Linkedin, ArrowUpRight } from "lucide-react";
 import { clientLogos } from "@/data/clients";
 
 interface FooterProps {
@@ -94,13 +94,6 @@ export function Footer({ variant = "default" }: FooterProps) {
               migration and global stakeholder management.
             </p>
             <div className="flex items-center gap-4 pt-2">
-              <a
-                href="mailto:sd.naveedhussain@gmail.com"
-                aria-label="Email Syed Naveed Hussain"
-                className="p-2 border border-separator hover:border-accent hover:text-accent transition-colors"
-              >
-                <Mail size={16} />
-              </a>
               <a
                 href="https://www.linkedin.com/in/naveed-hussain-syed"
                 target="_blank"

@@ -48,6 +48,16 @@ const Contact = () => {
               <p className="text-xs text-muted-foreground pl-9">
                 Tap to call on mobile &middot; use the copy icon on desktop
               </p>
+
+              <a
+                href={LINKEDIN_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-4 text-lg hover-highlight group"
+              >
+                <Linkedin size={20} className="text-muted-foreground group-hover:text-accent transition-colors" />
+                <span>LinkedIn</span>
+              </a>
             </div>
 
             {/* Location */}

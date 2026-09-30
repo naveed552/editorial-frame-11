@@ -58,7 +58,7 @@ export function SectionNav({ sections }: SectionNavProps) {
               className={`text-[11px] uppercase tracking-widest transition-colors duration-300 ${
                 activeId === section.id
                   ? "text-foreground"
-                  : "text-muted-foreground/50 group-hover:text-muted-foreground"
+                  : "text-muted-foreground/70 group-hover:text-muted-foreground"
               }`}
             >
               {section.label}

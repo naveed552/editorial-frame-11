@@ -213,7 +213,7 @@ const Index = () => {
           aria-label="Scroll to explore"
           className="absolute bottom-6 right-6 md:bottom-10 md:right-12 z-10 flex flex-col items-center gap-2 text-foreground/60 hover:text-foreground transition-colors"
         >
-          <span className="text-[10px] uppercase tracking-widest [writing-mode:vertical-rl]">
+          <span className="text-[11px] uppercase tracking-widest [writing-mode:vertical-rl]">
             Scroll
           </span>
           <ArrowDown size={16} className="animate-bounce" />
@@ -255,7 +255,7 @@ const Index = () => {
         <h2 className="text-headline max-w-3xl mb-4">
           Every role added a new layer of accountability.
         </h2>
-        <p className="max-w-2xl text-muted-foreground mb-12 md:mb-16">
+        <p className="max-w-2xl text-base md:text-lg text-muted-foreground mb-12 md:mb-16">
           From a first model in a notebook to owning delivery governance
           across international programmes. Tap a chapter to read more.
         </p>
@@ -427,12 +427,6 @@ const Index = () => {
             >
               <Linkedin size={16} /> LinkedIn
             </a>
-            <Link
-              to="/contact"
-              className="inline-flex items-center gap-2 text-foreground/80 text-xs md:text-sm font-semibold uppercase tracking-widest px-2 py-3 hover-highlight"
-            >
-              Full contact page <ArrowRight size={16} />
-            </Link>
           </div>
           <p className="mt-4 text-xs text-muted-foreground">
             {phoneCopied ? (

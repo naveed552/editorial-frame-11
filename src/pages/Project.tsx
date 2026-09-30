@@ -42,7 +42,7 @@ const Project = () => {
               {project.tags.map((tag) => (
                 <span
                   key={tag}
-                  className="text-[10px] md:text-xs uppercase tracking-widest px-3 py-1 border border-foreground/30 text-foreground/80"
+                  className="text-[11px] md:text-xs uppercase tracking-widest px-3 py-1 border border-foreground/30 text-foreground/80"
                 >
                   {tag}
                 </span>
@@ -59,11 +59,11 @@ const Project = () => {
           <div className="space-y-8">
             <div>
               <p className="text-label mb-2">Client</p>
-              <p>{project.client}</p>
+              <p className="text-base md:text-lg">{project.client}</p>
             </div>
             <div>
               <p className="text-label mb-2">Year</p>
-              <p>{project.year}</p>
+              <p className="text-base md:text-lg">{project.year}</p>
             </div>
             <div>
               <p className="text-label mb-2">Categories</p>

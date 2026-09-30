@@ -46,7 +46,7 @@ const About = () => {
         <div className="max-w-3xl space-y-14">
           {/* Professional Summary */}
           <div>
-            <h1 className="text-display mb-4 animate-fade-in-up whitespace-nowrap">
+            <h1 className="font-display font-bold tracking-tight mb-4 animate-fade-in-up text-4xl sm:text-5xl md:text-5xl lg:text-6xl md:whitespace-nowrap">
               Syed Naveed Hussain
             </h1>
             <p

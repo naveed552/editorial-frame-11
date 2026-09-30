@@ -31,7 +31,7 @@ export function ProjectListItem({
       <div className="container-wide py-5 md:py-6">
         <div className="flex items-center justify-between gap-4">
           {/* Title */}
-          <h3 className={`flex-1 text-lg md:text-xl lg:text-2xl font-sans uppercase tracking-wide transition-colors duration-300 ${
+          <h3 className={`flex-1 text-lg md:text-xl lg:text-2xl font-display font-semibold uppercase tracking-wide transition-colors duration-300 ${
             isHovered ? 'text-accent-foreground' : 'text-foreground'
           }`}>
             {title}
@@ -42,7 +42,7 @@ export function ProjectListItem({
             {tags.map((tag) => (
               <span
                 key={tag}
-                className={`text-[10px] md:text-xs uppercase tracking-widest px-3 py-1 border transition-colors duration-300 ${
+                className={`text-[11px] md:text-xs uppercase tracking-widest px-3 py-1 border transition-colors duration-300 ${
                   isHovered 
                     ? 'border-accent-foreground text-accent-foreground' 
                     : 'border-separator text-muted-foreground'
