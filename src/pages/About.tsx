@@ -25,7 +25,7 @@ const coreCompetencies = [
 const experience = [
   {
     role: "Technical Project Manager",
-    company: "Codilar Technologies",
+    company: "Enterprise eCommerce Delivery",
     period: "Present",
     location: "India (remote engagements across US, UK and Gulf)",
     points: [
@@ -53,7 +53,7 @@ const About = () => {
               className="text-lg md:text-xl text-foreground mb-8 animate-fade-in-up"
               style={{ animationDelay: "0.05s" }}
             >
-              Technical Project Manager, Codilar Technologies - eCommerce
+              Technical Project Manager - eCommerce
               Delivery, Data Migration and Global Stakeholder Management
             </p>
 
@@ -63,7 +63,7 @@ const About = () => {
               style={{ animationDelay: "0.1s" }}
             >
               <p>
-                Technical Project Manager at Codilar Technologies with proven
+                Technical Project Manager with proven
                 experience leading multiple concurrent eCommerce projects,
                 ensuring alignment with business objectives and timely
                 execution. Manages stakeholder communication for international

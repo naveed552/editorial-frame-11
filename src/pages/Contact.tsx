@@ -1,5 +1,7 @@
 import { Layout } from "@/components/Layout";
 import { Mail, Phone, MapPin, Linkedin } from "lucide-react";
+import { CopyableContact } from "@/components/CopyableContact";
+import syedHeadshot from "@/assets/syed-headshot.jpg";
 
 const LINKEDIN_URL = "https://www.linkedin.com/in/naveed-hussain-syed";
 
@@ -11,7 +13,7 @@ const Contact = () => {
           {/* Content */}
           <div className="space-y-12">
             <div>
-              <h1 className="text-display mb-6 animate-fade-in-up">
+              <h1 className="font-display font-bold tracking-tight mb-6 animate-fade-in-up text-4xl sm:text-5xl md:text-6xl lg:text-3xl lg:whitespace-nowrap xl:text-4xl 2xl:text-5xl">
                 Syed Naveed Hussain
               </h1>
               <p className="text-xl text-muted-foreground animate-fade-in-up" style={{ animationDelay: "0.1s" }}>
@@ -22,30 +24,30 @@ const Contact = () => {
             </div>
 
             {/* Contact Info */}
-            <div className="space-y-6 animate-fade-in-up" style={{ animationDelay: "0.2s" }}>
-              <a
+            <div className="space-y-5 animate-fade-in-up" style={{ animationDelay: "0.2s" }}>
+              <CopyableContact
                 href="mailto:sd.naveedhussain@gmail.com"
-                className="flex items-center gap-4 text-lg hover-highlight group"
-              >
-                <Mail size={20} className="text-muted-foreground group-hover:text-accent transition-colors" />
-                <span>sd.naveedhussain@gmail.com</span>
-              </a>
+                label="sd.naveedhussain@gmail.com"
+                copyValue="sd.naveedhussain@gmail.com"
+                icon={<Mail size={20} />}
+              />
 
-              <a
+              <CopyableContact
                 href="mailto:naveed.domain@yahoo.in"
-                className="flex items-center gap-4 text-lg hover-highlight group"
-              >
-                <Mail size={20} className="text-muted-foreground group-hover:text-accent transition-colors" />
-                <span>naveed.domain@yahoo.in</span>
-              </a>
+                label="naveed.domain@yahoo.in"
+                copyValue="naveed.domain@yahoo.in"
+                icon={<Mail size={20} />}
+              />
 
-              <a
+              <CopyableContact
                 href="tel:+919502686709"
-                className="flex items-center gap-4 text-lg hover-highlight group"
-              >
-                <Phone size={20} className="text-muted-foreground group-hover:text-accent transition-colors" />
-                <span>+91 95026 86709</span>
-              </a>
+                label="+91 95026 86709"
+                copyValue="+91 95026 86709"
+                icon={<Phone size={20} />}
+              />
+              <p className="text-xs text-muted-foreground pl-9">
+                Tap to call on mobile &middot; use the copy icon on desktop
+              </p>
             </div>
 
             {/* Location */}
@@ -59,10 +61,10 @@ const Contact = () => {
 
           {/* Image */}
           <div className="hidden lg:block">
-            <div className="aspect-[4/5] bg-secondary overflow-hidden">
+            <div className="aspect-[4/5] bg-secondary overflow-hidden border border-separator">
               <img
-                src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&h=1000&fit=crop"
-                alt="Workspace"
+                src={syedHeadshot}
+                alt="Syed Naveed Hussain"
                 loading="lazy"
                 className="w-full h-full object-cover"
               />

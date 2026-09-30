@@ -2,12 +2,25 @@ import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Menu, X, Sun, Moon } from "lucide-react";
 import { useTheme } from "next-themes";
+import { BookCallButton } from "@/components/BookCallModal";
 
 const navItems = [
   { label: "Projects", path: "/work" },
   { label: "About", path: "/about" },
   { label: "Contact", path: "/contact" },
 ];
+
+function StatusPill() {
+  return (
+    <span className="hidden lg:inline-flex items-center gap-2 border border-separator px-3 py-1.5 text-[11px] uppercase tracking-widest text-muted-foreground">
+      <span className="relative flex h-1.5 w-1.5">
+        <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-accent opacity-75" />
+        <span className="relative inline-flex rounded-full h-1.5 w-1.5 bg-accent" />
+      </span>
+      Open to new opportunities
+    </span>
+  );
+}
 
 interface HeaderProps {
   revealMode?: boolean;
@@ -77,8 +90,9 @@ export function Header({ revealMode = false }: HeaderProps) {
             ))}
           </nav>
 
-          {/* Right - Theme Toggle */}
-          <div className="hidden md:flex items-center">
+          {/* Right - Status, Theme Toggle, CTA */}
+          <div className="hidden md:flex items-center gap-4">
+            <StatusPill />
             <button
               onClick={toggleTheme}
               className="p-2 text-foreground/60 hover:text-foreground transition-colors"
@@ -86,6 +100,9 @@ export function Header({ revealMode = false }: HeaderProps) {
             >
               {mounted && (theme === "dark" ? <Sun size={18} /> : <Moon size={18} />)}
             </button>
+            <BookCallButton className="inline-flex items-center bg-accent text-accent-foreground text-xs font-semibold uppercase tracking-widest px-4 py-2.5 hover:opacity-85 transition-opacity">
+              Book a call
+            </BookCallButton>
           </div>
 
           {/* Mobile Menu Button */}
@@ -112,6 +129,13 @@ export function Header({ revealMode = false }: HeaderProps) {
       {isMenuOpen && (
         <div className="md:hidden fixed inset-0 top-20 bg-background z-40 animate-fade-in">
           <nav className="container-wide py-12 flex flex-col gap-8">
+            <span className="inline-flex w-fit items-center gap-2 border border-separator px-3 py-1.5 text-[11px] uppercase tracking-widest text-muted-foreground animate-fade-in-up">
+              <span className="relative flex h-1.5 w-1.5">
+                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-accent opacity-75" />
+                <span className="relative inline-flex rounded-full h-1.5 w-1.5 bg-accent" />
+              </span>
+              Open to new opportunities
+            </span>
             {navItems.map((item, index) => (
               <Link
                 key={item.path}
@@ -123,6 +147,13 @@ export function Header({ revealMode = false }: HeaderProps) {
                 {item.label}
               </Link>
             ))}
+            <BookCallButton
+              onTriggerClick={() => setIsMenuOpen(false)}
+              className="inline-flex w-fit items-center bg-accent text-accent-foreground text-sm font-semibold uppercase tracking-widest px-5 py-3 animate-fade-in-up"
+              style={{ animationDelay: `${navItems.length * 0.1}s` }}
+            >
+              Book a call
+            </BookCallButton>
           </nav>
         </div>
       )}

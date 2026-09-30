@@ -13,7 +13,7 @@ const Work = () => {
         <p className="mt-6 max-w-2xl text-base md:text-lg text-muted-foreground">
           Selected eCommerce delivery, data migration and delivery governance
           projects managed by Syed Naveed Hussain, Technical Project Manager at
-          Codilar Technologies, for clients across the United States, United
+          enterprise clients across the United States, United
           Kingdom and Gulf regions.
         </p>
       </section>
